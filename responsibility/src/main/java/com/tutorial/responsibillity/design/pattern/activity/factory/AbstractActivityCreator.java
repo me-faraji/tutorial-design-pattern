@@ -5,17 +5,11 @@ import com.tutorial.responsibillity.design.pattern.enums.ActivityStrategy;
 import lombok.Setter;
 
 public abstract class AbstractActivityCreator {
-    @Setter
-    private ActivityStrategy strategy;
-    @Setter
-    private long id;
-    @Setter
-    private int stepChange;
-    @Setter
-    private String statusText;
-    public abstract Command createStartCommand();
-    public abstract Command createChangeStepCommand();
-    public abstract Command createActivitySuccessCommand();
-    public abstract Command createActivityFailCommand();
-    public abstract Command createActivityCancelCommand();
+
+    public abstract Command createStartCommand(ActivityStrategy strategy);
+    public abstract Command createChangeStepCommand(long id);
+    public abstract Command createChangeStepToCommand(long id, int stepChange, String statusText);
+    public abstract Command createActivitySuccessCommand(long id);
+    public abstract Command createActivityFailCommand(long id, String statusText);
+    public abstract Command createActivityCancelCommand(long id, String statusText);
 }

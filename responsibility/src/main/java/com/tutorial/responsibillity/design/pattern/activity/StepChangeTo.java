@@ -2,27 +2,28 @@ package com.tutorial.responsibillity.design.pattern.activity;
 
 import com.tutorial.responsibillity.design.pattern.ActivityModel;
 import com.tutorial.responsibillity.design.pattern.command.ActivityChangeStepCommand;
-import com.tutorial.responsibillity.design.pattern.command.Command;
+import com.tutorial.responsibillity.design.pattern.command.ActivityChangeStepToCommand;
 
-public class StepChange implements ActivityChangeStepCommand {
+public class StepChangeTo implements ActivityChangeStepToCommand {
     private ActivityModel model;
+
     @Override
-    public ActivityChangeStepCommand process(long id) {
+    public ActivityChangeStepToCommand process(long id, int stepChange, String statusText) {
         return null;
     }
 
     @Override
-    public ActivityChangeStepCommand preStep() {
+    public ActivityChangeStepToCommand preStep() {
         return null;
     }
 
     @Override
-    public ActivityChangeStepCommand step() {
+    public ActivityChangeStepToCommand step() {
         return null;
     }
 
     @Override
-    public ActivityChangeStepCommand nextStep() {
+    public ActivityChangeStepToCommand nextStep() {
         return null;
     }
 
