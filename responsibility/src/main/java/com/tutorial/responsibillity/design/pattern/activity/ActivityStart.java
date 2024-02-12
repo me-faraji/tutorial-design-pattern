@@ -1,11 +1,11 @@
 package com.tutorial.responsibillity.design.pattern.activity;
 
-import com.tutorial.responsibillity.design.pattern.Command;
+import com.tutorial.responsibillity.design.pattern.command.Command;
 
-public class ActivityChangeStep extends ActivityAbstract {
-
+public class ActivityStart extends AbstractActivity {
     @Override
     public Command process() {
         return null;
     }
+
 }

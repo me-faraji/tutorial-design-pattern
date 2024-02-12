@@ -1,22 +1,10 @@
 package com.tutorial.responsibillity.design.pattern.activity;
 
 import com.tutorial.responsibillity.design.pattern.ActivityModel;
-import com.tutorial.responsibillity.design.pattern.Command;
-import lombok.Getter;
-import lombok.Setter;
+import com.tutorial.responsibillity.design.pattern.command.Command;
 
-public abstract class ActivityAbstract implements Command {
-    @Getter
-    @Setter
-    public Long reasonId;
-    @Getter
-    @Setter
-    public Integer stepChange;
-    @Getter
-    @Setter
-    public Integer statusText;
-    private ActivityModel model;
-
+public abstract class AbstractActivity implements Command {
+    ActivityModel model;
     @Override
     public Command preStep() {
         return null;
@@ -36,5 +24,4 @@ public abstract class ActivityAbstract implements Command {
     public ActivityModel getModel() {
         return model;
     }
-
 }

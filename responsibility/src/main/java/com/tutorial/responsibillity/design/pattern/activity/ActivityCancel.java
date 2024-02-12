@@ -1,11 +1,11 @@
 package com.tutorial.responsibillity.design.pattern.activity;
 
-import com.tutorial.responsibillity.design.pattern.ActivityModel;
-import com.tutorial.responsibillity.design.pattern.Command;
+import com.tutorial.responsibillity.design.pattern.command.Command;
 
-public class ActivityCancel extends ActivityAbstract {
+public class ActivityCancel extends AbstractActivity {
     @Override
     public Command process() {
         return null;
     }
+
 }
