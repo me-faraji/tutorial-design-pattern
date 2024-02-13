@@ -1,4 +1,4 @@
-package com.tutorial.responsibillity.design.pattern.activity.factory;
+package com.tutorial.responsibillity.design.pattern.factory;
 
 import com.tutorial.responsibillity.design.pattern.command.Command;
 import com.tutorial.responsibillity.design.pattern.activity.ActivitySuccess;
